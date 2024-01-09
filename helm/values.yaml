@@ -1,0 +1,20 @@
+#https://artifacthub.io/packages/helm/gresearch/storm
+#https://github.com/G-Research/charts/tree/master/storm
+
+supervisor:
+  image:
+    tag: 2.5.0
+  replicaCount: 1
+  slots: 2
+  resources:
+    limits:
+      cpu: 1
+
+nimbus:
+  image:
+    tag: 2.5.0
+
+ui:
+  image:
+    tag: 2.5.0
+
